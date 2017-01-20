@@ -29,7 +29,7 @@ public class Kontejner {
     //----------------------------------konstruktori---------------------------------------
     public Kontejner(){}
 
-    public Kontejner(String oznaka, String opis, String tezina){
+    public Kontejner(String oznaka, String opis, double tezina){
         this.oznaka=oznaka;
         this.opis=opis;
         this.tezina=tezina;

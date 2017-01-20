@@ -2,6 +2,9 @@ package zadaci;
 
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
+import com.j256.ormlite.table.TableUtils;
+import model.Brod;
+import model.Kontejner;
 
 import java.io.IOException;
 
@@ -14,6 +17,15 @@ public class Zadatak1KreiranjeTabela {
         ConnectionSource connectionSource = null;
         try {
             connectionSource = new JdbcConnectionSource("jdbc:sqlite:brodKontejner.db");
+
+//-------------prvo ih brisem-----------------------------------------------------------------
+            TableUtils.dropTable(connectionSource, Brod.class,true);
+            TableUtils.dropTable(connectionSource, Kontejner.class,true);
+
+//-------------posle ih istim redom kreiram---------------------------------------------------
+            TableUtils.createTable(connectionSource, Brod.class);
+            TableUtils.createTable(connectionSource,Kontejner.class);
+
 
         }catch (Exception e) {
             e.printStackTrace();

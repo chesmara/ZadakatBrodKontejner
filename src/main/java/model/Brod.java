@@ -23,7 +23,7 @@ public class Brod {
     @DatabaseField (columnName = POLJE_NAZIV , canBeNull = false)
     private String naziv;
 
-    @ForeignCollectionField(foreignFieldName = 'brod')
+    @ForeignCollectionField(foreignFieldName = "brod")
     private ForeignCollection<Kontejner> kontejneri;
 
 
