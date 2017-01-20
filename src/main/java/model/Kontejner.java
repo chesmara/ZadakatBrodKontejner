@@ -10,9 +10,9 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable(tableName = "kontejner")
 public class Kontejner {
 
-    private static final String POLJE_OZNAKA = "oznaka";
+    public static final String POLJE_OZNAKA = "oznaka";
     public static final String POLJE_OPIS = "opis";
-    private static final String POLJE_TEZINA = "tezina";
+    public static final String POLJE_TEZINA = "tezina";
 
 
 
