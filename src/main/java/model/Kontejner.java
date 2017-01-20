@@ -11,8 +11,10 @@ import com.j256.ormlite.table.DatabaseTable;
 public class Kontejner {
 
     private static final String POLJE_OZNAKA = "oznaka";
-    private static final String POLJE_OPIS = "opis";
+    public static final String POLJE_OPIS = "opis";
     private static final String POLJE_TEZINA = "tezina";
+
+
 
     @DatabaseField(generatedId = true)
     private int id;
