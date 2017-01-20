@@ -13,8 +13,8 @@ import java.util.Collection;
 @DatabaseTable(tableName = "brod")
 public class Brod {
 
-    private static final String  POLJE_OZNAKA = "oznaka";
-    private static final String  POLJE_NAZIV = "naziv";
+    public static final String  POLJE_OZNAKA = "oznaka";
+    public static final String  POLJE_NAZIV = "naziv";
 
     @DatabaseField (generatedId = true)
     private  int id;
